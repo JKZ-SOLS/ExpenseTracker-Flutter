@@ -7,15 +7,17 @@ class BalanceCard extends StatelessWidget {
   final Color iconColor;
   final Color backgroundColor;
   final bool small;
+  final Color text;
 
-  const BalanceCard(required String title, {
+   const BalanceCard({
     super.key,
     required this.title,
     required this.value,
     required this.icon,
     required this.iconColor,
     required this.backgroundColor,
-    this.small = false, required Color text,
+    required this.text,
+    this.small = false,
   });
 
   @override
